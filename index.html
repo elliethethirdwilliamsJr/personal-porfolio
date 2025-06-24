@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porfolio | Ellie</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <style>
+    * { font-family: 'Fira Code', monospace; }
+    html, body { overflow-x: hidden; }
+    .typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: .15em solid #00f7ff;
+      animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #00f7ff }
+    }
+    #tsparticles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white scroll-smooth">
+  <script>AOS.init();</script>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center justify-center flex-col text-center px-4 relative z-10" data-aos="fade-in">
+    <h1 class="text-4xl sm:text-6xl font-bold mb-4 typewriter">Hi, I'm Ellie</h1>
+    <p class="text-xl sm:text-2xl text-gray-400 max-w-xl">
+      Self-taught web & app developer. I build stuff with code and caffeine ☕
+    </p>
+    <div class="mt-6 flex gap-4">
+      <a href="#skills" class="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-lg font-bold">Skills</a>
+      <a href="#projects" class="bg-transparent border border-cyan-500 px-4 py-2 rounded-lg hover:bg-cyan-700">View Projects</a>
+    </div>
+  </section>
+
+  <!--  BACKGROUND -->
+  <div id="tsparticles"></div>
+  <script>
+    tsParticles.load("tsparticles", {
+      background: { color: { value: "#1f2937" } },
+      particles: {
+        number: { value: 80, density: { enable: true, area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 2 },
+        move: { enable: true, speed: 1 }
+      }
+    });
+  </script>
+  
+  <!-- PROJECTS -->
+<section id="projects" class="relative px-6 py-6 bg-transparent z-10">
+  <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up">🚀 Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="bg-gray-700 bg-opacity-80 rounded-xl p-4 shadow hover:scale-105 transition" data-aos="fade-right">
+      <h3 class="text-xl font-bold mb-2">Albertos Pizza App (Android)</h3>
+      <span class="inline-block bg-yellow-500 text-xs px-2 py-1 rounded mb-2">Android</span>
+      <p class="text-gray-300 text-sm">Android app for placing Albertos pizza orders using Kotlin + Firebase with delivery tracker and menu options.</p>
+    </div>
+
+    <div class="bg-gray-700 bg-opacity-80 rounded-xl p-4 shadow hover:scale-105 transition" data-aos="fade-left">
+      <h3 class="text-xl font-bold mb-2">Anime Streaming Website</h3>
+      <span class="inline-block bg-purple-500 text-xs px-2 py-1 rounded mb-2">Web</span>
+      <p class="text-gray-300 text-sm">Responsive website for browsing and streaming anime episodes. Includes search, dark mode, and categories.</p>
+    </div>
+
+    <div class="bg-gray-700 bg-opacity-80 rounded-xl p-4 shadow hover:scale-105 transition" data-aos="fade-right">
+      <h3 class="text-xl font-bold mb-2">Hotel Booking System (Android)</h3>
+      <span class="inline-block bg-yellow-500 text-xs px-2 py-1 rounded mb-2">Android</span>
+      <p class="text-gray-300 text-sm">Android hotel app with room types, schedule picker, Firebase login, and Firestore database for bookings.</p>
+    </div>
+
+    <div class="bg-gray-700 bg-opacity-80 rounded-xl p-4 shadow hover:scale-105 transition" data-aos="fade-left">
+      <h3 class="text-xl font-bold mb-2">AI Therapist</h3>
+      <span class="inline-block bg-blue-500 text-xs px-2 py-1 rounded mb-2">AI</span>
+      <p class="text-gray-300 text-sm">AI-powered chatbot web app for emotional support, mental check-ins, and journaling-style conversations.</p>
+    </div>
+
+    <div class="bg-gray-700 bg-opacity-80 rounded-xl p-4 shadow hover:scale-105 transition" data-aos="fade-right">
+      <h3 class="text-xl font-bold mb-2">Movie Streaming Website</h3>
+      <span class="inline-block bg-purple-500 text-xs px-2 py-1 rounded mb-2">Web</span>
+      <p class="text-gray-300 text-sm">Website for watching and discovering movies, with trailer previews, filters, and responsive UI using Tailwind.</p>
+    </div>
+
+    <div class="bg-gray-700 bg-opacity-80 rounded-xl p-4 shadow hover:scale-105 transition" data-aos="fade-left">
+      <h3 class="text-xl font-bold mb-2">Manga Reader</h3>
+      <span class="inline-block bg-pink-500 text-xs px-2 py-1 rounded mb-2">Web</span>
+      <p class="text-gray-300 text-sm">Clean and dark-themed manga reader with support for chapter navigation, bookmarking, and wishlist system.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="px-6 py-6 bg-gray-900" id="skills">
+  <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up">🧠 Skills</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 text-center text-sm">
+    
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      HTML5 <span class="text-xs text-gray-400 block mt-1">3+ years</span>
+    </div>
+
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      CSS3 / Tailwind <span class="text-xs text-gray-400 block mt-1">3+ years</span>
+    </div>
+
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      JavaScript <span class="text-xs text-gray-400 block mt-1">2+ years</span>
+    </div>
+
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      Firebase <span class="text-xs text-gray-400 block mt-1">1.5+ years</span>
+    </div>
+
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      Kotlin <span class="text-xs text-gray-400 block mt-1">1.5+ year</span>
+    </div>
+
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      Android SDK <span class="text-xs text-gray-400 block mt-1">1.5+ year</span>
+    </div>
+
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      React (Basic) <span class="text-xs text-gray-400 block mt-1">6 months</span>
+    </div>
+
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      Git & GitHub <span class="text-xs text-gray-400 block mt-1">2+ years</span>
+    </div>
+
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      Elementor <span class="text-xs text-gray-400 block mt-1">5+ months</span>
+    </div>
+
+    <div class="bg-gray-700 py-2 rounded" data-aos="fade-up">
+      WordPress <span class="text-xs text-gray-400 block mt-1">5+ months</span>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+<section class="px-6 py-8 bg-gray-800 text-center">
+  <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">📬 Contact Me</h2>
+  <p class="text-gray-400 mb-4" data-aos="fade-up">Let's build something awesome together!</p>
+  <div class="flex flex-col sm:flex-row gap-3 justify-center text-cyan-400" data-aos="fade-left">
+    <a href="mailto:elliewilliams0122@gmail.com" class="hover:underline">📧 Email</a>
+    <a href="https://github.com/elliethethirdwilliamsJr" class="hover:underline">💻 GitHub</a>
+    <a href="https://www.facebook.com/share/1UWrpkE4eh/" class="hover:underline">📘 Facebook</a>
+    <a href="#" class="hover:underline">📱 +63 942 332 0683</a>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="text-center text-xs text-gray-500 py-6">
+    © 2025 Ellie | All rights reserved.
+  </footer>
+</body>
+</html>
